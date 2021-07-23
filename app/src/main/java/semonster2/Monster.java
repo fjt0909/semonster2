@@ -1,22 +1,34 @@
 package semonster2;
 
+import java.util.Random;
+
 public class Monster {
   private String name;
-  private int rare; // 戦うとレア度が高いほうが勝つ．同じ場合は引き分け
+  private int rare;
+  private int HP;
+  private int ATK;
+
 
   Monster(int nameNum, int rareNum) {
-    this.name = this.summonMonster(nameNum);
+    Random random = new Random();
+    Random random2 = new Random();
+    this.name = this.summonMonster(nameNum,rareNum);
     this.rare = rareNum;
+    this.HP = random.nextInt(100)+100;
+    this.ATK = random2.nextInt(50)+20;
   }
 
-  String summonMonster(int mnumber) {
-    String monsters[] = { "スライム", "サハギン", "ドラゴン", "デュラハン", "シーサーペント" };
+  String summonMonster(int mnumber ,int rare) {
+    String monsters[] = {"スライム","サハギン","ドラゴン","デュラハン","シーサーペント"};
+    if (rare>2){
+      monsters[mnumber]="キング"+monsters[mnumber];
+    }
     return monsters[mnumber];
   }
 
   @Override
   public String toString() {
 
-    return this.name + ":レア度[" + this.rare + "]";
+    return this.name + ":レア度[" + this.rare + "] :体力["+this.HP+"] :攻撃力["+this.ATK+"]\n";
   }
 }
