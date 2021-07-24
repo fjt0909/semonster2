@@ -14,8 +14,8 @@ public class Monster {
     Random random2 = new Random();
     this.name = this.summonMonster(nameNum,rareNum);
     this.rare = rareNum;
-    this.HP = random.nextInt(100)+100;
-    this.ATK = random2.nextInt(50)+20;
+    //this.HP = random.nextInt(100)+100;
+    //this.ATK = random2.nextInt(50)+20;
   }
 
   String summonMonster(int mnumber ,int rare) {
@@ -25,10 +25,12 @@ public class Monster {
     }
     return monsters[mnumber];
   }
-
+  public int MonsterATK(int mnumber ,int rare ){
+    return this.ATK;
+  }
   @Override
   public String toString() {
 
-    return this.name + ":レア度[" + this.rare + "] :体力["+this.HP+"] :攻撃力["+this.ATK+"]\n";
+    return this.name + ":レア度[" + this.rare + "]";
   }
 }

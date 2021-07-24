@@ -8,6 +8,7 @@ public class Player {
   String name;// Player name
   int randomNumberList[];
   ArrayList<Monster> monsterDeck = new ArrayList<>();
+  ArrayList<Monster> monsterATK = new ArrayList<>();
   // randomな0~4の数値を必要な数保存しておく
   Player(int randomNumberList[], String playerName) {
     this.randomNumberList = randomNumberList;
