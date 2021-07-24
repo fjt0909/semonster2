@@ -14,9 +14,13 @@ public class Monster {
     return monsters[mnumber];
   }
 
+  void evolveMonster() {
+    if (this.rare >= 3) this.name = "レア・" + this.name; 
+  }
+
   @Override
   public String toString() {
-
+    this.evolveMonster();
     return this.name + ":レア度[" + this.rare + "]";
   }
 }
