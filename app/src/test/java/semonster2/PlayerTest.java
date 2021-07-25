@@ -8,7 +8,7 @@ public class PlayerTest {
     int num[] ={0,1,2,3,4};
     String name = "koudaitarou";
     Player player = new Player(num,name);
-    Assert.assertEquals("Deck koudaitaro\nスライム:レア度[0]サハギン:レア度[1]ドラゴン:レア度[2]デュラハン:レア度[3]シーサーペント:レア度[4]",player.deckoutput());
+    Assert.assertEquals("Deck koudaitaro\nスライム:レア度[0]サハギン:レア度[1]ドラゴン:レア度[2]レア・デュラハン:レア度[3]レア・シーサーペント:レア度[4]",player.deckoutput());
   }
 
 }
