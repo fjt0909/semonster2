@@ -13,9 +13,10 @@ public class App {
         System.out.println(new App().getGreeting());
         Monster monster = new Monster(0,0);
         System.out.println(monster.toString());
+
         //Player.java
         int num[] ={0,1,2,3,4};
-        String name = "konishi";
+        String name = "koudaitaro";
         Player player = new Player(num,name);
         System.out.println(player.deckoutput());
     }
