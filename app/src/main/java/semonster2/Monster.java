@@ -6,7 +6,7 @@ public class Monster {
 
 
   Monster(int nameNum, int rareNum) {
-    this.name = this.summonMonster(nameNum,rareNum);
+    this.name = this.summonMonster(nameNum);
     this.rare = rareNum;
   }
 
