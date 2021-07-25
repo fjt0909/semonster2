@@ -1,3 +1,4 @@
+
 package semonster2;
 
 import org.junit.Assert;
@@ -23,3 +24,4 @@ public class MonsterTest {
   }
 
 }
+
