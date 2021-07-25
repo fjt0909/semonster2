@@ -22,13 +22,16 @@ public class Player {
       this.monsterDeck.add(new Monster(num,num));
     }
   }
-  public void deckoutput(){
-    int num;
-    System.out.println("Deck "+ this.name +"\n");
-    for(int i=0;i<5;i++){
-      System.out.println(monsterDeck.get(i));
-    }
 
+  
+  public String deckoutput(){
+    int num;
+    StringBuilder sd = new StringBuilder();
+    sd.append("Deck "+ this.name +"\n");
+    for(int i=0;i<5;i++){
+      sd.append(monsterDeck.get(i));
+    }
+    return sd.toString();
 
   }
 

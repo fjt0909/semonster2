@@ -20,9 +20,6 @@ public class Monster {
 
   String summonMonster(int mnumber ,int rare) {
     String monsters[] = {"スライム","サハギン","ドラゴン","デュラハン","シーサーペント"};
-    if (rare>2){
-      monsters[mnumber]="キング"+monsters[mnumber];
-    }
     return monsters[mnumber];
   }
   public int MonsterATK(int mnumber ,int rare ){

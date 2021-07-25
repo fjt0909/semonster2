@@ -17,7 +17,7 @@ public class App {
         int num[] ={0,1,2,3,4};
         String name = "konishi";
         Player player = new Player(num,name);
-        player.deckoutput();git
+        System.out.println(player.deckoutput());
     }
 
 
