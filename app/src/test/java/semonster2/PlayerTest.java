@@ -1,3 +1,8 @@
+package semonster2;
+
+import org.junit.Assert;
+import org.junit.Test;
+
 public class PlayerTest {
   public void testdeckoutput() {
     int num[] ={0,1,2,3,4};
