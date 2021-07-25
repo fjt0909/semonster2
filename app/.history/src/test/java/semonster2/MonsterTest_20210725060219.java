@@ -6,8 +6,8 @@ import org.junit.Test;
 public class MonsterTest {
   @Test
   public void testSummonMonster1() {
-    Monster monster = new Monster(5, 5);
-    Assert.assertEquals("サイバードラゴン:レア度[5]", monster.toString());
+    Monster monster = new Monster(0, 0);
+    Assert.assertEquals("スライム:レア度[0]", monster.toString());
 
   }
 
