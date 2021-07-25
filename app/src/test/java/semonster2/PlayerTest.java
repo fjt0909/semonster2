@@ -1,5 +1,4 @@
 public class PlayerTest {
-  @Test
   public void testdeckoutput() {
     int num[] ={0,1,2,3,4};
     String name = "konishi";
